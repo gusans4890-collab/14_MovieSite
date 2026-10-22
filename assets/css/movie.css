@@ -1,0 +1,285 @@
+/* 무비 영역 */
+.movie {
+    padding: 50px 0 100px;
+}
+.movie_title {
+    margin-bottom: 60px;
+}
+.movie_title ul {
+    display: flex;
+    width: 848px;
+    margin: 0 auto;
+}
+.movie_title ul li {
+    width: 25%;
+    text-align: center;
+    border: 1px solid #9c9c9c;
+    margin-left: -1px;
+}
+
+.movie_title ul li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #666;
+}
+.movie_title ul li.active a {
+    background-color: #666;
+    color: #fff;
+}
+
+.poster {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.poster img {
+    display: block;
+}
+.poster .rank {
+    position: absolute;
+    left: 0;
+    top: 17px;
+
+    width: 50px;
+    height: 50px;
+    background-color: #391b6a;
+    color: #fff;
+    font-size: 30px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster .mx {
+    position: absolute;
+    right: 17px;
+    top: 17px;
+}
+.poster .mx span {
+    display: block;
+    width: 103px;
+    height: 25px;
+}
+.poster .mx span.m {
+    background-position: 0 -37px;
+    margin-bottom: 5px;
+}
+.poster .mx span.b {
+    background-position: 0 -60px;
+}
+.poster_overlay {
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 66px 28px 28px;
+    background: linear-gradient(180deg, #15121cde, #15121cf5);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+.poster_overlay .summary {
+    padding: 0;
+    min-height: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    color: #ffffffde;
+}
+.poster:hover .poster_overlay {
+    transform: translateY(0);
+}
+.poster_overlay .score {
+    margin-top: auto;
+    padding: 20px 0 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff40;
+}
+.poster_overlay .score span {
+    font-size: 13px;
+    color: #ffffffb3;
+}
+.poster_overlay .score strong {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.infor {
+    background-color: #fff;
+    padding: 10px 15px 15px 15px;
+    border: 1px solid #b4b3b3;
+    box-sizing: border-box;
+}
+.infor h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.infor h3 span {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    vertical-align: -4px;
+    margin-right: 8px;
+}
+.infor h3 span.all {
+    background-position: -78px -89px;
+}
+.infor h3 span.a12 {
+    background-position: 0 -89px;
+}
+.infor h3 span.a15 {
+    background-position: -26px -89px;
+}
+.infor h3 span.a19 {
+    background-position:
+        -78px,
+        -89px;
+}
+.infor h3 strong {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 22px;
+    font-weight: 700;
+}
+.infor .infor_btn {
+    display: flex;
+    gap: 2%;
+}
+.infor .infor_btn a {
+    flex: 1;
+    display: block;
+    font-size: 17px;
+    padding: 8px 0;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+.movie_chart .swiper-slide {
+    box-shadow: 0 0 10px #000000b0;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1300px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 960px) {
+    .movie_title ul {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    #movie {
+        padding: 24px;
+    }
+    #movie .row {
+        padding: 0 24px;
+        background-color: #fff;
+    }
+    .movie {
+        padding: 24px 0;
+    }
+    .movie h2.ir_so {
+        position: static;
+        width: auto;
+        height: auto;
+        line-height: normal;
+        text-indent: 0;
+
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #666;
+    }
+    .movie_title {
+        margin-bottom: 20px;
+    }
+
+    .movie_title ul li {
+        width: auto;
+        border: 0;
+    }
+    .movie_title ul li a {
+        position: relative;
+        padding: 5px 0;
+        font-weight: 400;
+        margin-right: 35px;
+    }
+    .movie_title ul li.active a {
+        background: none;
+        color: #000000;
+        font-weight: 600;
+    }
+    .movie_title ul li.active a::before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #666;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+@media (max-width: 600px) {
+    #movie {
+        padding: 16px;
+    }
+    #movie .row {
+        padding: 0 16px;
+    }
+    .movie {
+        padding: 16px 0;
+    }
+    .movie_chart {
+        /* 바깥 영역과 row의 오른쪽 여백을 합친 만큼 확장 */
+        margin-right: -32px;
+    }
+
+    .movie_title ul li a {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 480px) {
+    #movie {
+        padding: 12px;
+    }
+    #movie .row {
+        padding: 0 12px;
+    }
+    .movie {
+        padding: 12px 0;
+    }
+    .movie_chart {
+        margin-right: -24px;
+    }
+
+    .movie_title ul li a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 320px) {
+}

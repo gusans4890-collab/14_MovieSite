@@ -1,0 +1,1310 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="hm" />
+        <meta name="description" content="영화예매사이트 제작 학습" />
+        <meta
+            name="keywords"
+            content="영화예매사이트, 메가박스, CGV, 롯데시네마, 씨네Q, 영화인트로, 최신영화, 반응형 사이트, 클론코딩"
+        />
+        <title>메가박스 사이트 만들기</title>
+
+        <!-- css -->
+        <!-- 아이콘 폰트어썸 -->
+        <script src="https://kit.fontawesome.com/fb27592f06.js" crossorigin="anonymous"></script>
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/myswiper.css" />
+
+        <!-- 공통 css -->
+        <link rel="stylesheet" href="assets/css/font.css" />
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/common.css" />
+        <link rel="stylesheet" href="assets/css/layout.css" />
+
+        <!-- 영역별 css -->
+        <link rel="stylesheet" href="assets/css/mNav.css" />
+        <link rel="stylesheet" href="assets/css/header.css" />
+        <link rel="stylesheet" href="assets/css/banner.css" />
+        <link rel="stylesheet" href="assets/css/movie.css" />
+        <link rel="stylesheet" href="assets/css/event.css" />
+        <link rel="stylesheet" href="assets/css/opening.css" />
+        <link rel="stylesheet" href="assets/css/new.css" />
+        <link rel="stylesheet" href="assets/css/help.css" />
+        <link rel="stylesheet" href="assets/css/footer.css" />
+    </head>
+    <body>
+        <!-- 모바일 메뉴 -->
+        <nav id="mNav">
+            <a href="#" class="ham"><i class="fa-solid fa-bars"></i></a>
+            <ul>
+                <li><a href="#">영화</a></li>
+                <li><a href="#">큐레이션</a></li>
+                <li><a href="#">영화관</a></li>
+                <li><a href="#">특별관</a></li>
+                <li><a href="#">스토어</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">로그인</a></li>
+            </ul>
+        </nav>
+
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header">
+                        <h1>
+                            <a href="#">
+                                <em><img src="assets/img/logo.png" alt="" /></em>
+                                <strong><img src="assets/img/logo-sub.png" alt="" /></strong>
+                            </a>
+                        </h1>
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="#">영화</a></li>
+                                <li><a href="#">큐레이션</a></li>
+                                <li><a href="#">영화관</a></li>
+                                <li><a href="#">특별관</a></li>
+                                <li><a href="#">스토어</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">로그인</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <section id="banner">
+            <h2 class="ir_so">최신 영화 소식</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="banner_menu">
+                        <div class="bm_left">
+                            <ul>
+                                <li class="total">
+                                    <a href="#"><i class="fa-solid fa-bars"></i>전체메뉴</a>
+                                </li>
+                                <li class="line"><a href="#">필름 소사이어티</a></li>
+                                <li><a href="#">클래식 소사이어티</a></li>
+                            </ul>
+                        </div>
+                        <div class="bm_right">
+                            <ul>
+                                <li class="line"><a href="#">고객센터</a></li>
+                                <li class="line"><a href="#">멤버십</a></li>
+                                <li><a href="#">VIP</a></li>
+                            </ul>
+                            <ul>
+                                <li class="white"><a href="#">상영시간표</a></li>
+                                <li class="purple"><a href="#">빠른 예매</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //banner menu -->
+                </div>
+            </div>
+            <div class="slider">
+                <!-- Swiper -->
+                <div class="swiper hero">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ss1">
+                            <div class="container">
+                                <div class="row">
+                                    <h2>토르<em>God of Thunder</em></h2>
+                                    <p>천둥의 신, 전설의 귀환</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ss2">
+                            <div class="container">
+                                <div class="row">
+                                    <h2>아이언맨<em>Iron Man</em></h2>
+                                    <p>강철 슈트, 영웅의 탄생</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ss3">
+                            <div class="container">
+                                <div class="row">
+                                    <h2>캡틴 아메리카<em>Brave New World</em></h2>
+                                    <p>새로운 캡틴, 새로운 희망</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ss4">
+                            <div class="container">
+                                <div class="row">
+                                    <h2>팔콘과 윈터 솔져<em>New Heroes</em></h2>
+                                    <p>두 영웅, 하나의 임무</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ss5">
+                            <div class="container">
+                                <div class="row">
+                                    <h2>로키<em>Time to Rise</em></h2>
+                                    <p>시간을 넘어, 운명을 바꾸다</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ss6">
+                            <div class="container">
+                                <div class="row">
+                                    <h2>캡틴 아메리카<em>Civil War</em></h2>
+                                    <p>갈라진 영웅들, 신념의 대결</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ss7">
+                            <div class="container">
+                                <div class="row">
+                                    <h2>어벤져스<em>Endgame</em></h2>
+                                    <p>모든 것을 건, 마지막 전투</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ss8">
+                            <div class="container">
+                                <div class="row">
+                                    <h2>울트론<em>Age of Ultron</em></h2>
+                                    <p>깨어난 인공지능, 인류의 위기</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- //banner -->
+
+        <section id="movie">
+            <div class="container">
+                <div class="row">
+                    <div class="movie">
+                        <h2 class="ir_so">영화예매</h2>
+                        <div class="movie_title">
+                            <ul>
+                                <li class="active"><a href="#">박스오피스</a></li>
+                                <li><a href="#">최신개봉작</a></li>
+                                <li><a href="#">상영예정작</a></li>
+                                <li><a href="#">큐레이션</a></li>
+                            </ul>
+                        </div>
+                        <div class="movie_chart">
+                            <div class="chart_cont1">
+                                <div class="swiper slider2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster01.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>1</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        첫째 아들을 잃은 제이크와 네이티리는 슬픔 속에서 가족을 지키려
+                                                        한다. 그러나 바랑이 이끄는 재의 부족이 등장하며 판도라에는
+                                                        새로운 위협이 드리운다. 인간과 나비족 사이의 갈등이 더욱
+                                                        복잡해지는 가운데, 설리 가족은 또 한 번 중대한 선택을 마주한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.8</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>아바타: 불과 재</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster02.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>2</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        1457년, 왕위에서 쫓겨난 어린 왕 이홍위가 청령포로 유배된다.
+                                                        마을을 살리기 위해 유배지를 자처한 촌장 엄흥도는 뜻밖의 손님을
+                                                        맞이한다. 서로 다른 삶을 살아온 두 사람은 작은 마을에서 함께
+                                                        지내며 특별한 인연을 쌓아 간다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.5</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>왕과 사는 남자</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster03.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>3</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        원산과 평양에서 시작된 신앙의 물결은 세계의 부흥 역사와 어떻게
+                                                        이어질까. 한국과 미국, 영국, 인도 등 여러 지역의 기록과 오늘날의
+                                                        현장을 따라가며 기독교 부흥의 의미를 살펴보는 다큐멘터리. 과거의
+                                                        역사와 현재를 살아가는 사람들의 믿음을 함께 담는다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.1</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span><strong>부흥</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster04.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>4</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        국제 범죄를 추적하던 국정원 요원 조 과장은 희생된 정보원이 남긴
+                                                        단서를 따라 블라디보스토크로 향한다. 서로 다른 목적을 품은
+                                                        이들의 움직임이 겹치면서 작전은 더욱 위험해진다. 누구를 믿어야
+                                                        할지 알 수 없는 상황에서 각자의 선택이 충돌한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.7</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>휴민트</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster05.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>5</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        스무 살이 된 하리와 월드스타가 된 도깨비 신비. 화려한 축제
+                                                        속에서 오랜 시간 잠들어 있던 지하국대적이 부활하며 세상이 위험에
+                                                        빠진다. 소중한 이들을 지키기 위해 다시 힘을 모은 친구들이 새로운
+                                                        모험을 시작한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.3</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span
+                                                    ><strong>신비아파트: 한 번 더, 소환</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster06.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>6</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        엄마가 해 준 밥을 먹을 때마다 하민의 눈앞에 알 수 없는 숫자가
+                                                        나타난다. 그 숫자가 엄마와 함께할 수 있는 시간과 연결되어 있다는
+                                                        사실을 알게 된 하민. 평범했던 한 끼가 특별한 의미로 다가오면서,
+                                                        엄마와 아들은 익숙한 일상의 소중함을 마주한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.9</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>넘버원</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster07.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>7</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        저주를 풀기 위해 여행을 떠난 아시타카는 숲을 지키는 신들과 철을
+                                                        만드는 인간들의 싸움에 휘말린다. 늑대에게 길러진 소녀 산과
+                                                        타타라 마을의 지도자 에보시 사이에서, 그는 어느 한쪽의 파괴가
+                                                        아닌 공존의 길을 찾으려 한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.6</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span
+                                                    ><strong>모노노케 히메</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster08.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>8</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        아내를 살해한 혐의로 AI 재판대에 서게 된 형사 레이븐. 그에게
+                                                        주어진 시간은 단 90분이다. 자신이 믿었던 시스템의 판결에 맞서
+                                                        디지털 기록과 증거를 추적하며, 시간이 끝나기 전에 자신의 무죄를
+                                                        밝혀야 한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.4</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>노 머시: 90분</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster09.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>9</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        세상이 기이한 재난으로 흔들리는 가운데, 도시 곳곳에 척이라는
+                                                        남자에게 감사를 전하는 광고가 등장한다. 누구인지 알 수 없는 한
+                                                        사람과 사라져 가는 세계는 어떻게 연결되어 있을까. 평범한 남자의
+                                                        삶을 따라가며 기억과 만남이 남기는 의미를 돌아본다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.4</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>척의 일생</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart_cont2">
+                                <div class="swiper slider2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster10.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>1</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        첫째 아들을 잃은 제이크와 네이티리는 슬픔 속에서 가족을 지키려
+                                                        한다. 그러나 바랑이 이끄는 재의 부족이 등장하며 판도라에는
+                                                        새로운 위협이 드리운다. 인간과 나비족 사이의 갈등이 더욱
+                                                        복잡해지는 가운데, 설리 가족은 또 한 번 중대한 선택을 마주한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.8</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>아바타: 불과 재</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster11.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>2</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        1457년, 왕위에서 쫓겨난 어린 왕 이홍위가 청령포로 유배된다.
+                                                        마을을 살리기 위해 유배지를 자처한 촌장 엄흥도는 뜻밖의 손님을
+                                                        맞이한다. 서로 다른 삶을 살아온 두 사람은 작은 마을에서 함께
+                                                        지내며 특별한 인연을 쌓아 간다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.5</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>왕과 사는 남자</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster12.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>3</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        원산과 평양에서 시작된 신앙의 물결은 세계의 부흥 역사와 어떻게
+                                                        이어질까. 한국과 미국, 영국, 인도 등 여러 지역의 기록과 오늘날의
+                                                        현장을 따라가며 기독교 부흥의 의미를 살펴보는 다큐멘터리. 과거의
+                                                        역사와 현재를 살아가는 사람들의 믿음을 함께 담는다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.1</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span><strong>부흥</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster13.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>4</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        국제 범죄를 추적하던 국정원 요원 조 과장은 희생된 정보원이 남긴
+                                                        단서를 따라 블라디보스토크로 향한다. 서로 다른 목적을 품은
+                                                        이들의 움직임이 겹치면서 작전은 더욱 위험해진다. 누구를 믿어야
+                                                        할지 알 수 없는 상황에서 각자의 선택이 충돌한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.7</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>휴민트</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster14.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>5</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        스무 살이 된 하리와 월드스타가 된 도깨비 신비. 화려한 축제
+                                                        속에서 오랜 시간 잠들어 있던 지하국대적이 부활하며 세상이 위험에
+                                                        빠진다. 소중한 이들을 지키기 위해 다시 힘을 모은 친구들이 새로운
+                                                        모험을 시작한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.3</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span
+                                                    ><strong>신비아파트: 한 번 더, 소환</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster15.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>6</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        엄마가 해 준 밥을 먹을 때마다 하민의 눈앞에 알 수 없는 숫자가
+                                                        나타난다. 그 숫자가 엄마와 함께할 수 있는 시간과 연결되어 있다는
+                                                        사실을 알게 된 하민. 평범했던 한 끼가 특별한 의미로 다가오면서,
+                                                        엄마와 아들은 익숙한 일상의 소중함을 마주한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.9</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>넘버원</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster16.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>7</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        저주를 풀기 위해 여행을 떠난 아시타카는 숲을 지키는 신들과 철을
+                                                        만드는 인간들의 싸움에 휘말린다. 늑대에게 길러진 소녀 산과
+                                                        타타라 마을의 지도자 에보시 사이에서, 그는 어느 한쪽의 파괴가
+                                                        아닌 공존의 길을 찾으려 한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.6</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span
+                                                    ><strong>모노노케 히메</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster17.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>8</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        아내를 살해한 혐의로 AI 재판대에 서게 된 형사 레이븐. 그에게
+                                                        주어진 시간은 단 90분이다. 자신이 믿었던 시스템의 판결에 맞서
+                                                        디지털 기록과 증거를 추적하며, 시간이 끝나기 전에 자신의 무죄를
+                                                        밝혀야 한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.4</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>노 머시: 90분</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster02.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>9</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        세상이 기이한 재난으로 흔들리는 가운데, 도시 곳곳에 척이라는
+                                                        남자에게 감사를 전하는 광고가 등장한다. 누구인지 알 수 없는 한
+                                                        사람과 사라져 가는 세계는 어떻게 연결되어 있을까. 평범한 남자의
+                                                        삶을 따라가며 기억과 만남이 남기는 의미를 돌아본다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.4</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>척의 일생</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart_cont3">
+                                <div class="swiper slider2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster17.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>1</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        첫째 아들을 잃은 제이크와 네이티리는 슬픔 속에서 가족을 지키려
+                                                        한다. 그러나 바랑이 이끄는 재의 부족이 등장하며 판도라에는
+                                                        새로운 위협이 드리운다. 인간과 나비족 사이의 갈등이 더욱
+                                                        복잡해지는 가운데, 설리 가족은 또 한 번 중대한 선택을 마주한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.8</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>아바타: 불과 재</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster02.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>2</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        1457년, 왕위에서 쫓겨난 어린 왕 이홍위가 청령포로 유배된다.
+                                                        마을을 살리기 위해 유배지를 자처한 촌장 엄흥도는 뜻밖의 손님을
+                                                        맞이한다. 서로 다른 삶을 살아온 두 사람은 작은 마을에서 함께
+                                                        지내며 특별한 인연을 쌓아 간다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.5</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>왕과 사는 남자</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster15.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>3</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        원산과 평양에서 시작된 신앙의 물결은 세계의 부흥 역사와 어떻게
+                                                        이어질까. 한국과 미국, 영국, 인도 등 여러 지역의 기록과 오늘날의
+                                                        현장을 따라가며 기독교 부흥의 의미를 살펴보는 다큐멘터리. 과거의
+                                                        역사와 현재를 살아가는 사람들의 믿음을 함께 담는다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.1</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span><strong>부흥</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster13.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>4</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        국제 범죄를 추적하던 국정원 요원 조 과장은 희생된 정보원이 남긴
+                                                        단서를 따라 블라디보스토크로 향한다. 서로 다른 목적을 품은
+                                                        이들의 움직임이 겹치면서 작전은 더욱 위험해진다. 누구를 믿어야
+                                                        할지 알 수 없는 상황에서 각자의 선택이 충돌한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.7</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>휴민트</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster11.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>5</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        스무 살이 된 하리와 월드스타가 된 도깨비 신비. 화려한 축제
+                                                        속에서 오랜 시간 잠들어 있던 지하국대적이 부활하며 세상이 위험에
+                                                        빠진다. 소중한 이들을 지키기 위해 다시 힘을 모은 친구들이 새로운
+                                                        모험을 시작한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.3</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span
+                                                    ><strong>신비아파트: 한 번 더, 소환</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster09.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>6</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        엄마가 해 준 밥을 먹을 때마다 하민의 눈앞에 알 수 없는 숫자가
+                                                        나타난다. 그 숫자가 엄마와 함께할 수 있는 시간과 연결되어 있다는
+                                                        사실을 알게 된 하민. 평범했던 한 끼가 특별한 의미로 다가오면서,
+                                                        엄마와 아들은 익숙한 일상의 소중함을 마주한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.9</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>넘버원</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster08.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>7</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        저주를 풀기 위해 여행을 떠난 아시타카는 숲을 지키는 신들과 철을
+                                                        만드는 인간들의 싸움에 휘말린다. 늑대에게 길러진 소녀 산과
+                                                        타타라 마을의 지도자 에보시 사이에서, 그는 어느 한쪽의 파괴가
+                                                        아닌 공존의 길을 찾으려 한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.6</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span
+                                                    ><strong>모노노케 히메</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster05.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>8</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        아내를 살해한 혐의로 AI 재판대에 서게 된 형사 레이븐. 그에게
+                                                        주어진 시간은 단 90분이다. 자신이 믿었던 시스템의 판결에 맞서
+                                                        디지털 기록과 증거를 추적하며, 시간이 끝나기 전에 자신의 무죄를
+                                                        밝혀야 한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.4</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>노 머시: 90분</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster03.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>9</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        세상이 기이한 재난으로 흔들리는 가운데, 도시 곳곳에 척이라는
+                                                        남자에게 감사를 전하는 광고가 등장한다. 누구인지 알 수 없는 한
+                                                        사람과 사라져 가는 세계는 어떻게 연결되어 있을까. 평범한 남자의
+                                                        삶을 따라가며 기억과 만남이 남기는 의미를 돌아본다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.4</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>척의 일생</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart_cont4">
+                                <div class="swiper slider2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster03.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>1</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        첫째 아들을 잃은 제이크와 네이티리는 슬픔 속에서 가족을 지키려
+                                                        한다. 그러나 바랑이 이끄는 재의 부족이 등장하며 판도라에는
+                                                        새로운 위협이 드리운다. 인간과 나비족 사이의 갈등이 더욱
+                                                        복잡해지는 가운데, 설리 가족은 또 한 번 중대한 선택을 마주한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.8</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>아바타: 불과 재</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster05.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>2</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        1457년, 왕위에서 쫓겨난 어린 왕 이홍위가 청령포로 유배된다.
+                                                        마을을 살리기 위해 유배지를 자처한 촌장 엄흥도는 뜻밖의 손님을
+                                                        맞이한다. 서로 다른 삶을 살아온 두 사람은 작은 마을에서 함께
+                                                        지내며 특별한 인연을 쌓아 간다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.5</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>왕과 사는 남자</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster01.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>3</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        원산과 평양에서 시작된 신앙의 물결은 세계의 부흥 역사와 어떻게
+                                                        이어질까. 한국과 미국, 영국, 인도 등 여러 지역의 기록과 오늘날의
+                                                        현장을 따라가며 기독교 부흥의 의미를 살펴보는 다큐멘터리. 과거의
+                                                        역사와 현재를 살아가는 사람들의 믿음을 함께 담는다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.1</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span><strong>부흥</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster10.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>4</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        국제 범죄를 추적하던 국정원 요원 조 과장은 희생된 정보원이 남긴
+                                                        단서를 따라 블라디보스토크로 향한다. 서로 다른 목적을 품은
+                                                        이들의 움직임이 겹치면서 작전은 더욱 위험해진다. 누구를 믿어야
+                                                        할지 알 수 없는 상황에서 각자의 선택이 충돌한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.7</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>휴민트</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster12.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>5</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        스무 살이 된 하리와 월드스타가 된 도깨비 신비. 화려한 축제
+                                                        속에서 오랜 시간 잠들어 있던 지하국대적이 부활하며 세상이 위험에
+                                                        빠진다. 소중한 이들을 지키기 위해 다시 힘을 모은 친구들이 새로운
+                                                        모험을 시작한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.3</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span
+                                                    ><strong>신비아파트: 한 번 더, 소환</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster15.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>6</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        엄마가 해 준 밥을 먹을 때마다 하민의 눈앞에 알 수 없는 숫자가
+                                                        나타난다. 그 숫자가 엄마와 함께할 수 있는 시간과 연결되어 있다는
+                                                        사실을 알게 된 하민. 평범했던 한 끼가 특별한 의미로 다가오면서,
+                                                        엄마와 아들은 익숙한 일상의 소중함을 마주한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.9</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a12 ir_pm">12세 이상 관람가</span
+                                                    ><strong>넘버원</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster08.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>7</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        저주를 풀기 위해 여행을 떠난 아시타카는 숲을 지키는 신들과 철을
+                                                        만드는 인간들의 싸움에 휘말린다. 늑대에게 길러진 소녀 산과
+                                                        타타라 마을의 지도자 에보시 사이에서, 그는 어느 한쪽의 파괴가
+                                                        아닌 공존의 길을 찾으려 한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.6</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon all ir_pm">전체관람가</span
+                                                    ><strong>모노노케 히메</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster04.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>8</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        아내를 살해한 혐의로 AI 재판대에 서게 된 형사 레이븐. 그에게
+                                                        주어진 시간은 단 90분이다. 자신이 믿었던 시스템의 판결에 맞서
+                                                        디지털 기록과 증거를 추적하며, 시간이 끝나기 전에 자신의 무죄를
+                                                        밝혀야 한다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>8.4</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>노 머시: 90분</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="poster">
+                                                <figure><img src="assets/img/poster01.jpg" alt="" /></figure>
+                                                <div class="rank"><strong>9</strong></div>
+                                                <div class="mx">
+                                                    <span class="icon m ir_pm">MX</span>
+                                                    <span class="icon b ir_pm">Boutique</span>
+                                                </div>
+                                                <div class="poster_overlay">
+                                                    <div class="summary">
+                                                        세상이 기이한 재난으로 흔들리는 가운데, 도시 곳곳에 척이라는
+                                                        남자에게 감사를 전하는 광고가 등장한다. 누구인지 알 수 없는 한
+                                                        사람과 사라져 가는 세계는 어떻게 연결되어 있을까. 평범한 남자의
+                                                        삶을 따라가며 기억과 만남이 남기는 의미를 돌아본다.
+                                                    </div>
+                                                    <div class="score"><span>관람평</span><strong>9.4</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="infor">
+                                                <h3>
+                                                    <span class="icon a15 ir_pm">15세 이상 관람가</span
+                                                    ><strong>척의 일생</strong>
+                                                </h3>
+                                                <div class="infor_btn">
+                                                    <a href="#">상세보기</a>
+                                                    <a href="#">예매하기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //movie -->
+
+        <section id="event">
+            <div class="container">
+                <div class="row">
+                    <div class="event">
+                        <h2>새로운 이벤트</h2>
+                        <div class="event_inner">
+                            <div class="event_left">
+                                <div class="event_box01"><img src="assets/img/event01.jpg" alt="" /></div>
+                                <div class="event_box02"><img src="assets/img/event02.jpg" alt="" /></div>
+                                <div class="event_box03"><img src="assets/img/event03.jpg" alt="" /></div>
+                            </div>
+
+                            <div class="event_right"><img src="assets/img/event04.jpg" alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //event -->
+
+        <section id="opening"></section>
+        <!-- //opening -->
+
+        <section id="new"></section>
+        <!-- //new -->
+
+        <section id="help"></section>
+        <!-- //help -->
+
+        <section id="footer"></section>
+        <!-- //footer -->
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script src="assets/js/mySwiper.js"></script>
+        <script src="assets/js/index.js"></script>
+    </body>
+</html>

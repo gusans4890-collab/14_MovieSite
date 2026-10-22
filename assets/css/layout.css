@@ -1,0 +1,24 @@
+/* 레이아웃 */
+#header {
+    width: 100%;
+    border-bottom: 1px solid #bbb;
+}
+#banner {
+}
+#movie {
+    background-color: #d9d9d9;
+    padding: 0 24px;
+}
+#event {
+    background-color: #fff;
+    padding: 24px;
+    padding-top: 0;
+}
+#opening {
+}
+#new {
+}
+#help {
+}
+#footer {
+}

@@ -1,0 +1,101 @@
+.event {
+    padding: 100px 0;
+}
+.event h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.event_inner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.event_inner {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.event_left {
+    /* 아래 두 이미지를 붙이고 세로·좌우 영역 간격 20px에 맞춰 높이를 맞춤 */
+    flex: 0 0 calc(68.0169913% - 21.8072938px);
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
+}
+.event_right {
+    flex: 1;
+    min-width: 0;
+}
+.event_box01 {
+    width: 100%;
+}
+.event_box02,
+.event_box03 {
+    width: 50%;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1300px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 960px) {
+}
+@media (max-width: 768px) {
+    #event {
+        background-color: #d9d9d9;
+        padding-top: 0;
+    }
+    #event .row {
+        padding: 0 24px;
+        background-color: #fff;
+    }
+    .event {
+        padding: 24px 0;
+    }
+    .event h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .event_right {
+        display: none;
+    }
+    .event_left {
+        flex: 0 0 100%;
+        width: 100%;
+        row-gap: 0;
+    }
+}
+@media (max-width: 600px) {
+    #event {
+        padding: 0 16px 16px;
+    }
+    #event .row {
+        padding: 0 16px;
+    }
+    .event {
+        padding: 16px 0;
+    }
+}
+@media (max-width: 480px) {
+    #event {
+        padding: 0 12px 12px;
+    }
+    #event .row {
+        padding: 0 12px;
+    }
+    .event {
+        padding: 12px 0;
+    }
+}
+@media (max-width: 320px) {
+}
