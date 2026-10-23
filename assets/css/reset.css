@@ -99,6 +99,9 @@ img {
 }
 
 /* clearfix */
+.clearfix {
+    *zoom: 1;
+}
 .clearfix:before,
 .clearfix:after {
     display: block;
@@ -133,3 +136,32 @@ img {
     line-height: 0;
     text-indent: -9999px;
 } /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때(Screen Out*/
+
+/* input style */
+input {
+    background-image: none;
+}
+input[type="button"],
+input[type="reset"],
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="search"],
+input[type="tel"],
+input[type="email"],
+select,
+option {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+input:checked[type="checkbox"] {
+    background-color: #666;
+    -webkit-appearance: checkbox;
+}
+input:focus {
+    outline: none;
+}

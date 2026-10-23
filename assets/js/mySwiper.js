@@ -15,6 +15,7 @@ var swiper = new Swiper(".hero", {
 });
 
 var swiper = new Swiper(".slider2", {
+    loop: true,
     slidesPerView: 1.2,
     spaceBetween: 12,
     pagination: {

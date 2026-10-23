@@ -44,7 +44,8 @@
     color: #6f2bc7;
 }
 .bm_left ul li.total a:hover {
-    color: #fff;
+    color: #6f2bc7;
+    border-color: #6f2bc7;
 }
 .bm_right {
     display: flex;

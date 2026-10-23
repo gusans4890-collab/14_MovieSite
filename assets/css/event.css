@@ -37,6 +37,12 @@
 .event_box03 {
     width: 50%;
 }
+.event_box01,
+.event_box02,
+.event_box03,
+.event_right {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
 
 /* 미디어 쿼리 */
 @media (max-width: 1300px) {
