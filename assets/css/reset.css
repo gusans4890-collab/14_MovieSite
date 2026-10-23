@@ -165,3 +165,9 @@ input:checked[type="checkbox"] {
 input:focus {
     outline: none;
 }
+
+select {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    border-radius: 0 !important;
+}
