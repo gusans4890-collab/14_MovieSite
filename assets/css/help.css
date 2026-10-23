@@ -7,6 +7,19 @@
 }
 .help > div {
     flex: 1;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: transform 0.4s, opacity 0.4s;
+}
+.help > div.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.help > div:nth-child(2) {
+    transition-delay: 0.1s;
+}
+.help > div:nth-child(3) {
+    transition-delay: 0.2s;
 }
 .help > div h3 {
     font-size: 28px;

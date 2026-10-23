@@ -10,6 +10,7 @@
 .new_inner {
     display: flex;
     gap: 22px;
+    overflow: hidden;
 }
 .new_left {
     /* width: calc(100% - 400px); */
@@ -28,6 +29,24 @@
     background-color: #f2f2f2;
     padding: 34px;
     box-sizing: border-box;
+}
+
+.new_left,
+.new_right {
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.new_left {
+    transform: translateX(-80px);
+}
+.new_right {
+    transform: translateX(80px);
+    transition-delay: 0.15s;
+}
+.new_left.show,
+.new_right.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .new_right .title {

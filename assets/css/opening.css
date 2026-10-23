@@ -46,8 +46,22 @@
     background: rgba(255, 255, 255, 0.06);
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     padding: 36px 20px 28px;
+
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.3s;
 }
-.open_box h3 {
+.open_box > div.show {
+    transform: scale(1);
+    opacity: 1;
+}
+.open_box > div.show:nth-child(2) {
+    transition-delay: 0.15s;
+}
+.open_box > div.show:nth-child(3) {
+    transition-delay: 0.3s;
+}
+.open_box > div .open_box h3 {
     background-color: rgba(53, 35, 48, 0.8);
     color: #f3d6a5;
     padding: 3px 16px;

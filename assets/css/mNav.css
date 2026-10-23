@@ -1,7 +1,11 @@
 /* 모바일 메뉴 */
 #mNav {
-    background-color: red;
+    width: 100%;
     display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2100;
 }
 #mNav .ham {
     display: block;
@@ -11,16 +15,67 @@
     right: 0;
     padding: 7px 16px;
     cursor: pointer;
+    z-index: 1;
+}
+#mNav .ham.active {
+    color: #000;
 }
 
 #mNav ul {
-    display: none;
+    width: 100%;
+    height: calc(100vh - var(--header-height, 58px));
+    height: calc(100dvh - var(--header-height, 58px));
+    box-sizing: border-box;
+    padding: 0;
+    overflow-y: auto;
+    position: fixed;
+    top: var(--header-height, 58px);
+    right: 0;
+    background-color: #38116a;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out, visibility 0.3s;
 }
-
+#mNav ul.active {
+    transform: translateX(0);
+    visibility: visible;
+}
+#mNav ul li {
+    border-bottom: 1px solid #ffffff1a;
+}
+#mNav ul li a {
+    font-size: 20px;
+    display: block;
+    padding: 25px 20px;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+#mNav ul li a:hover,
+#mNav ul li a:focus-visible {
+    color: #ffffff;
+    background-color: #6f2bc7;
+}
 /* 미디어 쿼리 */
 
 @media (max-width: 1024px) {
     #mNav {
         display: block;
+    }
+    #mNav ul li a {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    #mNav ul {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    #mNav ul li a {
+        padding: 18px 16px;
+        font-size: 18px;
+        line-height: 24px;
     }
 }

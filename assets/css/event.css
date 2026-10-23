@@ -25,10 +25,29 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px 0;
+
+    transform: translateY(600px);
+    opacity: 0;
+    transition:
+        transform 0.5s,
+        opacity 0.5s;
+}
+.event_left.show {
+    transform: translateY(0);
+    opacity: 1;
 }
 .event_right {
     flex: 1;
     min-width: 0;
+    transform: translateY(600px);
+    opacity: 0;
+    transition:
+        transform 0.5s 0.15s,
+        opacity 0.5s 0.15s;
+}
+.event_right.show {
+    transform: translateY(0);
+    opacity: 1;
 }
 .event_box01 {
     width: 100%;
