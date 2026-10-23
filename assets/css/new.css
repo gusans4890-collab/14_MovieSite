@@ -89,6 +89,14 @@
 
     border: 0 none;
 }
+.new_right input[type="date"] {
+    color-scheme: dark;
+    font: inherit;
+    min-width: 0;
+}
+.new_right input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
 .new_right .btn {
     display: flex;
     justify-content: space-between;
@@ -168,13 +176,13 @@
         padding: 24px 0;
     }
     .new_inner {
-        padding: 0 24px;
+        padding: 0;
     }
     .new h2 {
         font-size: 24px;
         font-weight: 600;
         margin-bottom: 10px;
-        margin-left: 22px;
+        margin-left: 0;
     }
 }
 @media (max-width: 600px) {

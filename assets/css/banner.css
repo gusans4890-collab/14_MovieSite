@@ -195,6 +195,12 @@
 }
 
 /* 미디어 쿼리 */
+@media (min-width: 961px) {
+    .slider .row {
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+}
 @media (max-width: 1300px) {
     .container {
         width: 100%;
@@ -296,6 +302,43 @@
 
     .banner_menu {
         top: 10px;
+    }
+}
+@media (max-width: 400px) {
+    .bm_right ul:nth-child(2) {
+        gap: 6px;
+    }
+    .bm_right ul:nth-child(2) li {
+        margin-left: 0;
+    }
+    .bm_right ul:nth-child(2) li.white a,
+    .bm_right ul:nth-child(2) li.purple a {
+        width: 80px;
+        box-sizing: border-box;
+        padding: 5px 6px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0;
+    }
+    .slider h2 {
+        margin-top: 64px;
+        margin-left: 4px;
+        font-size: 19px;
+    }
+    .slider h2 em {
+        font-size: 16px;
+        margin-top: 3px;
+    }
+    .slider h2::after {
+        width: 150px;
+        bottom: -10px;
+    }
+    .slider p {
+        margin-left: 4px;
+        padding-top: 20px;
+        font-size: 13px;
+        line-height: 1.4;
+        word-break: keep-all;
     }
 }
 @media (max-width: 320px) {

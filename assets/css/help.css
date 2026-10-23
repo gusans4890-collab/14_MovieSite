@@ -1,0 +1,351 @@
+/* 헬프 영역 */
+.help {
+    padding: 100px 0;
+    padding-top: 0;
+    display: flex;
+    gap: 2%;
+}
+.help > div {
+    flex: 1;
+}
+.help > div h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* 공지사항 */
+.notice {
+    padding: 17px;
+    position: relative;
+    height: 350px;
+    border: 1px solid #888888;
+}
+.notice > ul {
+    display: flex;
+}
+.notice > ul > li > a {
+    display: block;
+    width: 80px;
+    padding: 10px 20px;
+    border: 1px solid #b3b3b3;
+    font-size: 15px;
+    background-color: #d9d9d9;
+    color: #5b5b5b;
+    margin-left: -1px;
+    text-align: center;
+}
+.notice > ul > li.active > a {
+    background-color: #fff;
+}
+.notice > ul > li > ul {
+    position: absolute;
+    left: 17px;
+    top: 70px;
+    width: 90%;
+}
+
+.notice > ul > li > ul > li {
+    border-bottom: 1px solid #777;
+    padding: 17px;
+}
+.notice > ul > li > ul > li:last-child {
+    border: 0;
+}
+.notice > ul > li > ul > li > dl > dt > em {
+    color: #999;
+}
+.notice > ul > li > ul > li > dl > dd {
+    color: #777;
+    padding-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 메가박스 할인카드 */
+.card {
+    padding: 17px;
+    border: 1px solid #888888;
+}
+.card ul {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+.card ul li {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #888888;
+    display: flex;
+    align-items: center;
+}
+.card ul li a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.card ul li a span.card_img img {
+    display: block;
+}
+.card ul li a span.card_img {
+    width: 115px;
+    margin-right: 5%;
+}
+.card ul li a span.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+.card ul li a span.desc strong {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+    line-height: 1.25;
+}
+.card ul li a span.desc em {
+    font-size: 14px;
+    color: #666;
+    word-break: keep-all;
+    line-height: 1.35;
+}
+
+/* 고객센터 */
+.service {
+}
+.service ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service ul li {
+    width: 50%;
+    height: 193px;
+    box-sizing: border-box;
+    border: 1px solid #888888;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service ul li:nth-child(1),
+.service ul li:nth-child(2) {
+    border-bottom: 0;
+}
+.service ul li:nth-child(1),
+.service ul li:nth-child(3) {
+    border-right: 0;
+}
+.service ul li a {
+    display: block;
+}
+.service ul li a img {
+    width: 83px;
+}
+.service ul li a strong {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1300px) {
+    .card ul li {
+        padding: 6px 10px;
+    }
+    .card ul li a {
+        align-items: center;
+    }
+    .card ul li a span.card_img {
+        flex: 0 0 80px;
+        margin-right: 12px;
+    }
+    .card ul li a span.card_img img {
+        width: 100%;
+        height: auto;
+    }
+    .card ul li a span.desc strong {
+        font-size: 16px;
+    }
+    .card ul li a span.desc em {
+        font-size: 13px;
+    }
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .help {
+        flex-wrap: wrap;
+    }
+    .help > div {
+        flex: none;
+    }
+    .help_box1 {
+        width: 49%;
+    }
+    .help_box2 {
+        width: 49%;
+    }
+    .help_box3 {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .help_box3 h3 {
+        display: none;
+    }
+    .service ul {
+        border: 1px solid #888888;
+    }
+    .service ul li {
+        width: 25%;
+        border: 0;
+    }
+}
+@media (max-width: 960px) {
+}
+@media (max-width: 768px) {
+    .service ul {
+        border: 0;
+    }
+    .service ul li {
+        height: 140px;
+        padding: 0 6px;
+    }
+    .service ul li a {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+    .service ul li a img {
+        display: block;
+        width: 76px;
+    }
+    .service ul li a strong {
+        font-size: 15px;
+        line-height: 1.4;
+        word-break: keep-all;
+    }
+    .card ul li a span.card_img {
+        flex-basis: 120px;
+    }
+    .card ul li a span.desc strong {
+        font-size: 22px;
+    }
+    .card ul li a span.desc em {
+        font-size: 17px;
+    }
+    #help {
+        background-color: #d9d9d9;
+    }
+    .help_box1 {
+        width: 100%;
+        margin-bottom: 0;
+        background-color: #fff;
+    }
+    .help_box2 {
+        width: 100%;
+        background-color: #fff;
+    }
+    .help_box3 {
+        background-color: #fff;
+    }
+    #help .row {
+        padding: 0;
+    }
+    .help {
+        padding: 0;
+        gap: 24px;
+    }
+    .help > div {
+        padding: 24px;
+        box-sizing: border-box;
+        margin-top: 0;
+    }
+    .help > div h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .service ul li {
+        width: 50%;
+        height: 140px;
+    }
+    .service ul li a img {
+        width: 76px;
+    }
+    .service ul li a strong {
+        font-size: 16px;
+    }
+    .card ul li a span.card_img {
+        flex-basis: 110px;
+    }
+    .card ul li a span.desc strong {
+        font-size: 20px;
+    }
+    .card ul li a span.desc em {
+        font-size: 16px;
+    }
+    #help {
+        padding: 16px;
+    }
+    .help {
+        gap: 16px;
+    }
+    .help > div {
+        padding: 16px;
+    }
+}
+@media (max-width: 480px) {
+    .service ul li {
+        height: 125px;
+    }
+    .service ul li a img {
+        width: 68px;
+    }
+    .service ul li a strong {
+        font-size: 14px;
+    }
+    .card ul li a span.card_img {
+        flex-basis: 90px;
+    }
+    .card ul li a span.desc strong {
+        font-size: 18px;
+    }
+    .card ul li a span.desc em {
+        font-size: 15px;
+    }
+    #help {
+        padding: 12px;
+    }
+    .help {
+        gap: 12px;
+    }
+    .help > div {
+        padding: 12px;
+    }
+}
+@media (max-width: 320px) {
+    .notice > ul > li {
+        flex: 1;
+        min-width: 0;
+    }
+    .notice > ul > li > a {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 4px;
+        font-size: 13px;
+        white-space: nowrap;
+        margin-left: 0;
+    }
+    .notice > ul > li + li > a {
+        border-left: 0;
+    }
+}
