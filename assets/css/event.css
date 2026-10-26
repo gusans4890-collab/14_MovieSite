@@ -26,11 +26,11 @@
     flex-wrap: wrap;
     gap: 20px 0;
 
-    transform: translateY(600px);
+    transform: translateY(80px);
     opacity: 0;
     transition:
-        transform 0.5s,
-        opacity 0.5s;
+        transform 0.65s,
+        opacity 0.65s;
 }
 .event_left.show {
     transform: translateY(0);
@@ -39,11 +39,11 @@
 .event_right {
     flex: 1;
     min-width: 0;
-    transform: translateY(600px);
+    transform: translateY(80px);
     opacity: 0;
     transition:
-        transform 0.5s 0.15s,
-        opacity 0.5s 0.15s;
+        transform 0.65s 0.15s,
+        opacity 0.65s 0.15s;
 }
 .event_right.show {
     transform: translateY(0);

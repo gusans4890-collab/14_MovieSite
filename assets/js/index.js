@@ -60,7 +60,7 @@ window.addEventListener("scroll", () => {
     let event = document.querySelector("#event");
     let eventTop = event.offsetTop;
 
-    if (scrollTop >= eventTop) {
+    if (window.scrollY + window.innerHeight * 0.8 >= eventTop) {
         document.querySelector(".event_left").classList.add("show");
         document.querySelector(".event_right").classList.add("show");
     } else {
